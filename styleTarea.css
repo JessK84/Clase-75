@@ -11,16 +11,18 @@ header {
     color: white;
 }
 nav {
-    margin: 0px;
-}
-ul {
-    margin: 0px auto;
-    padding: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    margin: 0px;
     list-style: none;
+}
+a {
+    margin: 0px auto;
+    padding: 20px;
     cursor: pointer;
+    color: wheat;
+    text-decoration: none;
 }
 
 .section-imagen {

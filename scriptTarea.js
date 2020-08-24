@@ -22,6 +22,6 @@ const mostrarGatos = () => {
 }
 
 const load = () => {
-    const imagenGatos = document.querySelector('#abrir');
-    imagenGatos.addEventListener('click', mostrarGatos);
+    const navLinks = document.querySelector('#abrir');
+    navLinks.addEventListener('click', mostrarGatos);
 }

@@ -14,7 +14,7 @@ const mostrarToDo = () => {
                 botonEliminar.type = 'button';
                 botonEliminar.style.marginLeft = "7px";
                 botonEliminar.style.marginTop = "4px";
-                span.innerText =  user.name +`\n Tarea: ` + todo.title;
+                span.innerText = `Nombre: `+ user.name +`\n Tarea: ` + todo.title;
 
                 // console.log(`este ese res.title`, todo.title);
                 try {

@@ -6,41 +6,42 @@
     <title>Tarea Clase 75</title>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"> 
-    <link rel="stylesheet" href="styleTarea.css">
-    <script src="scriptTarea.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="styles2.css">
+    <script src="script2.js" type="text/javascript"></script>
     <script src="https://unpkg.com/axios@0.20.0/dist/axios.min.js"></script>
 </head>
 <body onload="load()">
-    <header>
+    <header id="main-header">
         <nav>
-            <a href="#cerrar" id="cerrar">Otra Raza</a>
-            <a href="#abrir" id="abrir">Random Gatuno</a>
+            <a href="#cerrar" id="btn-razas" class="nav-link">Otra Raza</a>
+            <a href="#abrir" id="btn-random" class="nav-link">Random Gatuno</a>
         </nav>
     </header>
-    <main class="contenedor">
         <section class="buscar">   
             <form action="">
-                <input id="input-gatitos" type="text" placeholder="Ingrese su raza preferida"><button class="search" type="button"><i id="searc" class="fas fa-search"></i></button>     
+                <input id="input-gatitos" type="text" placeholder="looking for a little cat"><button class="search" type="button"><i id="searc" class="fas fa-search"></i></button>     
             </form>
             <table>
                 <thead><!-- titulo tabla -->
                     <th>NAME</th>
                     <th>WEIGHT</th>
                     <th>ORIGIN</th>
+                    <th>TEMPERAMENT</th>
                 </thead>
-                <tbody >
-                     <tr id="data-gatitos"> <!-- filas -->
-                        <!-- <td id="id">1</td>
+                <tbody id="data-gatitos">
+                     <!-- <tr > filas
+                        <td id="id">1</td>
                         <td id="name">Siames</td>
-                        <td id="webSite">www.hola.org</td> -->
-                    </tr>
+                        <td id="webSite">www.hola.org</td>
+                    </tr> -->
                 </tbody>                
             </table>  
     </section>
-    <section class="section-imagen">
-        <figure >
+    <section id="sct-razas" class="main-sct"></section>
+    <section id="sct-random" class="main-sct">
+        <figure>
+            <img id="random-img" src="" alt="Imagen random de gatitx" />
         </figure>
     </section> 
-    </main>  
 </body>
 </html>

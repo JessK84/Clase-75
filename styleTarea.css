@@ -26,11 +26,61 @@ a {
 }
 
 .section-imagen {
-    padding-top: 20px;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 700px;
-    height: 500px;
-    margin: 50px auto;
+    width: 500px;
+    overflow: hidden;
+    margin: 0px auto;
+}
+
+.buscar {
+    margin: 0px auto;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+#input-gatitos {
+    padding: 4px;
+    height: 20px;
+}
+
+#search {
+    padding: 4px;
+    height: 20px;
+}
+button{
+    height: 32px;
+    padding: 4px;
+}
+.contenedor {
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.div-gatos {
+    display: flex;
+    flex-direction: column;
+}
+table {
+    margin-top: 30px;
+    border-collapse: collapse;
+}
+th{
+    padding: 0px 60px;
+}
+td {
+    padding: 0px 60px;
+    font-size: 20px;
+    text-align: center;
+    border-top: 2px solid black;
+    background-color: #c676d4;
+}
+form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }

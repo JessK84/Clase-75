@@ -2,14 +2,14 @@ let arrTodo = [];
 let users = [];
 
 const onload = () => {
-       
+
     const p1 = axios.get("https://jsonplaceholder.typicode.com/todos")// acá el nuevo post
     // .then(res => arrTodo = res.data)  
     // .catch(err => console.log(err));
     console.log(`Se cargo`, arrTodo );
 
     const p2 = axios.get("https://jsonplaceholder.typicode.com/users")
-    // .then(res => users = res.data)  
+    // .then(res => users = res.data)   
     // .catch(err => console.log(err));
     // console.log(`Se cargo`, arrTodo );
 
@@ -69,7 +69,7 @@ const onload = () => {
                 title: inputNewTask,
                 completed: false,             
                 userId: 1,
-            })        
+            })      // Cambiar elementos, POST, abrir el objeto y hacer las mofificaciones
             arrTodo.push(newPost.data);
             crearElementos(newPost.data); 
         } catch (err) {
